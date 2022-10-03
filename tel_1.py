@@ -4,25 +4,7 @@ import requests
 import os
 """
 
-GRL
-Active Key
-aio_bRDk35cNyF0fn4umtJwbIoJAHHoM
-Hide Code Samples
 
-Arduino
-=======
-#define IO_USERNAME  "GRL"
-#define IO_KEY       "aio_bRDk35cNyF0fn4umtJwbIoJAHHoM"
-
-Linux Shell
-===========
-export IO_USERNAME="GRL"
-export IO_KEY="aio_bRDk35cNyF0fn4umtJwbIoJAHHoM"
-
-Scripting
-=========
-ADAFRUIT_IO_USERNAME = "GRL"
-ADAFRUIT_IO_KEY = "aio_bRDk35cNyF0fn4umtJwbIoJAHHoM"
 """
 
 #creation the feed(this should be done only once)…..if you want to create the feed automatically from code then run this part of code separately or else you can create
@@ -30,10 +12,10 @@ ADAFRUIT_IO_KEY = "aio_bRDk35cNyF0fn4umtJwbIoJAHHoM"
 #result = aio.create_feed(feed)
 #adafruit_io user name and active key
 
-ADAFRUIT_IO_USERNAME = os.getenv('GRL')
-ADAFRUIT_IO_KEY = os.getenv('aio_bRDk35cNyF0fn4umtJwbIoJAHHoM')
-aio = Client('GRL','aio_bRDk35cNyF0fn4umtJwbIoJAHHoM')
-Telegram_token = os.getenv('1020207388:AAEwLSS9zdmlpnEUaDkwmRizOfDQacVIGYg')
+ADAFRUIT_IO_USERNAME = os.getenv('nnn')
+ADAFRUIT_IO_KEY = os.getenv('nnn')
+aio = Client('nnn','nnn')
+Telegram_token = os.getenv('nnn')
 
 #this function is used reply when you start the bot
 def start(bot, update):
@@ -74,7 +56,7 @@ def text_given(bot, update):
   else:
     wrong_message(bot,update)
     
-ud = Updater('1020207388:AAEwLSS9zdmlpnEUaDkwmRizOfDQacVIGYg')
+ud = Updater('nnn')
 dip = ud.dispatcher
 dip.add_handler(MessageHandler(Filters.text, text_given))
 
